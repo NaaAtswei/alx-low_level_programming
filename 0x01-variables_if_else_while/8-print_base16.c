@@ -11,14 +11,11 @@ int main(void)
 	int n;
 	int m;
 
-	for (n = 48; n <= 57; n++)
-	{
-		putchar(n);
-	}
-	for (m = 97; n <= 107; m++)
-	{
-		putchar(m);
-	}
-	putchar('\n')
+	for (n = '0'; n <= '9'; n++)
+	putchar(n);
+
+	for (m = 'a'; n <= 'f'; m++)
+	putchar(m);
+	putchar('\n');
 	return (0);
 }
