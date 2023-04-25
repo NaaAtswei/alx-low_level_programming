@@ -1,26 +1,19 @@
 #include "main.h"
 
 /**
- * print_last_digit - Prints the last digit
- * of a number.
- *
- * @n: input number as integer.
- *
- * Return: last digit.
+ * print_last_digit - Prints the last digit of a number
+ * @n: The number to be treated
+ * Return: Value of the last digit of a number
  */
 int print_last_digit(int n)
 {
-	int l;
+	int last;
 
-	l = n % 10;
-	if (l < 0)
+	last = n % 10;
+	if (last < 10)
 	{
-		_putchar(-l + 48);
-		return (-l);
+	last = last * -1;
 	}
-	else
-	{
-		_putchar(-l + 48);
-		return (l);
-	}
+	_putchar(last + '0');
+	return (last);
 }
