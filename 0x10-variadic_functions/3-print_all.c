@@ -32,7 +32,6 @@ void print_all(const char * const format, ...)
 					break;
 				case 's':
 					str = va_arg(list, char *);
-
 					if (!str)
 						str = "(nil)";
 
